@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.Objects;
 
-
+/**
+ * 异常处理
+ * */
 @Log4j2
 @RestControllerAdvice
 public class ControllerAdviceHandler {
