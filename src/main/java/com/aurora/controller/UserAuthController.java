@@ -79,13 +79,5 @@ public class UserAuthController {
     public ResultVO<UserInfoDTO> qqLogin(@Valid @RequestBody QQLoginVO qqLoginVO) {
         return ResultVO.ok(userAuthService.qqLogin(qqLoginVO));
     }
-//    @ApiOperation(value = "登录")
-//    @PostMapping("/users/login")
-//    public ResultVO Login(@RequestBody UserLogin userLogin) {
-//        UserInfoDTO userInfoDTO = userAuthService.login(userLogin);
-//        if (userInfoDTO == null) {
-//            return ResultVO.ok("密码错误后者账号不存在");
-//        }
-//        return ResultVO.ok(userInfoDTO);
-//    }
+
 }

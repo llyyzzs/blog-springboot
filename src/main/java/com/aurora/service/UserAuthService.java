@@ -22,6 +22,6 @@ public interface UserAuthService {
     UserLogoutStatusDTO logout();
 
     UserInfoDTO qqLogin(QQLoginVO qqLoginVO);
-//    UserInfoDTO login(UserLogin userLogin);
+
 
 }
