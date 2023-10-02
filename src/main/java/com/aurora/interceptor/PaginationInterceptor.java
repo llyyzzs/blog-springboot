@@ -12,7 +12,9 @@ import java.util.Objects;
 import java.util.Optional;
 
 import static com.aurora.constant.CommonConstant.*;
-
+/**
+ * 设置当前页码和页面大小
+ * */
 @Component
 @SuppressWarnings("all")
 public class PaginationInterceptor implements HandlerInterceptor {
