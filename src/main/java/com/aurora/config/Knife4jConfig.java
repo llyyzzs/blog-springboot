@@ -34,7 +34,7 @@ public class Knife4jConfig {
         return new ApiInfoBuilder()
                 .title("aurora文档")
                 .description("aurora")
-                .contact(new Contact("花未眠", "", "1909925152@qq.com"))
+                .contact(new Contact("十三", "", "1909925152@qq.com"))
                 .termsOfServiceUrl("https://www.linhaojun.top/api")
                 .version("1.0")
                 .build();
