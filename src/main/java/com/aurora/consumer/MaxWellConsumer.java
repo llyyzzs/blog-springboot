@@ -12,7 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import static com.aurora.constant.RabbitMQConstant.MAXWELL_QUEUE;
-
+/**
+ * 同步ES
+ * */
 @Component
 @RabbitListener(queues = MAXWELL_QUEUE)
 public class MaxWellConsumer {
