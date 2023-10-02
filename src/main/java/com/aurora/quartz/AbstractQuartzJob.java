@@ -1,5 +1,7 @@
 package com.aurora.quartz;
-
+/**
+ * 定时任务
+ * */
 import com.aurora.constant.ScheduleConstant;
 import com.aurora.entity.Job;
 import com.aurora.entity.JobLog;
