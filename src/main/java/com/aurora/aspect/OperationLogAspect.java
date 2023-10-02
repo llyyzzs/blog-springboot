@@ -23,7 +23,9 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.util.Objects;
-
+/**
+ * 操作数据库日志记录
+ * */
 @Aspect
 @Component
 public class OperationLogAspect {
