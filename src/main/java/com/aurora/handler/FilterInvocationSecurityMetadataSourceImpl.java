@@ -14,7 +14,9 @@ import org.springframework.util.AntPathMatcher;
 import javax.annotation.PostConstruct;
 import java.util.Collection;
 import java.util.List;
-
+/**
+ *确定请求所需的访问权限
+ **/
 @Component
 public class FilterInvocationSecurityMetadataSourceImpl implements FilterInvocationSecurityMetadataSource {
 
@@ -46,7 +48,7 @@ public class FilterInvocationSecurityMetadataSourceImpl implements FilterInvocat
             if (antPathMatcher.match(resourceRoleDTO.getUrl(), url) && resourceRoleDTO.getRequestMethod().equals(method)) {
                 List<String> roleList = resourceRoleDTO.getRoleList();
                 if (CollectionUtils.isEmpty(roleList)) {
-                    return SecurityConfig.createList("disable");
+                    return SecurityConfig.createList("disable");//禁用
                 }
                 return SecurityConfig.createList(roleList.toArray(new String[]{}));
             }
