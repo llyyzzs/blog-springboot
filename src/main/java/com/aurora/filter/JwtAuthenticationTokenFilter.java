@@ -16,7 +16,9 @@ import javax.servlet.FilterChain;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Objects;
-
+/**
+ * 校验token
+ * */
 @Component
 @SuppressWarnings("all")
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {

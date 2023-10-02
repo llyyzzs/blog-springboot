@@ -64,7 +64,9 @@ public class TokenServiceImpl implements TokenService {
     public Claims parseToken(String token) {
         return Jwts.parser().setSigningKey(generalKey()).parseClaimsJws(token).getBody();
     }
-
+    /**
+     * 校验token
+     * */
     @Override
     public UserDetailsDTO getUserDetailDTO(HttpServletRequest request) {
         String token = Optional.ofNullable(request.getHeader(TOKEN_HEADER)).orElse("").replaceFirst(TOKEN_PREFIX, "");
