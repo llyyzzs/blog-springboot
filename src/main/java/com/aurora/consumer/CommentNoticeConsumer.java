@@ -10,7 +10,9 @@ import org.springframework.stereotype.Component;
 
 
 import static com.aurora.constant.RabbitMQConstant.EMAIL_QUEUE;
-
+/**
+ * 发送邮件
+ * */
 @Component
 @RabbitListener(queues = EMAIL_QUEUE)
 public class CommentNoticeConsumer {
