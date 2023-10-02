@@ -7,7 +7,9 @@ import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
-
+/**
+ * 公共字段自动填充
+ * */
 @Slf4j
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler {
