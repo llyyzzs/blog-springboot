@@ -19,7 +19,9 @@ import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 
 import static com.aurora.constant.CommonConstant.APPLICATION_JSON;
-
+/**
+ * 请求频率限制
+ * */
 @Log4j2
 @Component
 @SuppressWarnings("all")
