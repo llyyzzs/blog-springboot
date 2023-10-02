@@ -5,9 +5,12 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/aurora?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+#    url: jdbc:mysql://localhost:3306/aurora?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+#    username: root
+#    password: lyz20010801
+    url: jdbc:mysql://192.168.11.111:3306/aurora?serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
-    password: lyz20010801
+    password: root
     hikari:
       minimum-idle: 10
       idle-timeout: 180000
@@ -19,7 +22,7 @@ spring:
       connection-test-query: SELECT 1
 
   redis:
-    host: localhost
+    host: 192.168.11.111
     port: 6379
 #    password: 密码
     database: 7
