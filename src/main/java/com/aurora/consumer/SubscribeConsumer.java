@@ -22,7 +22,9 @@ import java.util.stream.Collectors;
 
 import static com.aurora.constant.CommonConstant.TRUE;
 import static com.aurora.constant.RabbitMQConstant.SUBSCRIBE_QUEUE;
-
+/**
+ * 邮件发送
+ * */
 @Component
 @RabbitListener(queues = SUBSCRIBE_QUEUE)
 public class SubscribeConsumer {

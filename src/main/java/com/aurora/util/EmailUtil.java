@@ -11,7 +11,9 @@ import org.thymeleaf.context.Context;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
-
+/**
+ * 发送邮件
+ * */
 @Component
 public class EmailUtil {
 
